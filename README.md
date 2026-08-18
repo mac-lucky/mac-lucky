@@ -111,12 +111,6 @@ The exporters below exist because I wanted a metric nobody was publishing yet.
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mac-lucky/mac-lucky/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mac-lucky/mac-lucky/output/github-snake.svg" />
-  <img src="https://raw.githubusercontent.com/mac-lucky/mac-lucky/output/github-snake.svg" width="100%" alt="Snake eating my contribution graph" />
-</picture>
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3d59a1,100:1a1b27&height=120&section=footer" width="100%" alt="" />
 
 </div>
