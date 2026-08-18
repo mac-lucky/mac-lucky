@@ -22,33 +22,32 @@ A push-notification platform I build end to end. Native clients on iOS, watchOS 
 The interesting part is everything feeding it. Home Assistant entities, Grafana alerts, Unraid array events and webhook sources all land in the same activity model, so one glance covers the house, the cluster and CI.
 
 <div align="center">
-
-<a href="https://pushward.app"><img src="https://img.shields.io/badge/pushward.app-3d59a1?style=flat-square&logo=safari&logoColor=white" alt="pushward.app" /></a>
-
-<a href="https://github.com/mac-lucky/pushward-hass"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=pushward-hass&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="pushward-hass" /></a>
-<a href="https://github.com/mac-lucky/pushward-integrations"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=pushward-integrations&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="pushward-integrations" /></a>
-<a href="https://github.com/mac-lucky/pushward-grafana-plugin"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=pushward-grafana-plugin&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="pushward-grafana-plugin" /></a>
-<a href="https://github.com/mac-lucky/pushward-mcp"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=pushward-mcp&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="pushward-mcp" /></a>
-<a href="https://github.com/mac-lucky/pushward-unraid-plugin"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=pushward-unraid-plugin&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="pushward-unraid-plugin" /></a>
-
+<a href="https://pushward.app"><img src="https://img.shields.io/badge/pushward.app-3d59a1?style=for-the-badge&logo=safari&logoColor=white" alt="pushward.app" /></a>
 </div>
+
+| Repo | What it does | |
+|---|---|---|
+| **[pushward-hass](https://github.com/mac-lucky/pushward-hass)** | HACS integration that tracks Home Assistant entities as Live Activities | <img src="https://img.shields.io/github/stars/mac-lucky/pushward-hass?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> |
+| **[pushward-integrations](https://github.com/mac-lucky/pushward-integrations)** | Relay plus six bridges, a seven-module Go workspace | <img src="https://img.shields.io/github/stars/mac-lucky/pushward-integrations?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> |
+| **[pushward-grafana-plugin](https://github.com/mac-lucky/pushward-grafana-plugin)** | Turns Grafana alerts into Live Activities, plus a PromQL widget engine | <img src="https://img.shields.io/github/stars/mac-lucky/pushward-grafana-plugin?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go%20+%20React-00ADD8?style=flat-square&logo=grafana&logoColor=white" alt="Go and React" /> |
+| **[pushward-mcp](https://github.com/mac-lucky/pushward-mcp)** | MCP server so an agent can drive notifications and activities | <img src="https://img.shields.io/github/stars/mac-lucky/pushward-mcp?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> |
+| **[pushward-unraid-plugin](https://github.com/mac-lucky/pushward-unraid-plugin)** | Forwards Unraid notifications and tracks parity, backup and mover | <img src="https://img.shields.io/github/stars/mac-lucky/pushward-unraid-plugin?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/PHP%20+%20Bash-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP and Bash" /> |
 
 ---
 
 ## 🛠️ Homelab and infrastructure
 
-Two clusters, split on purpose. A bare-metal Talos cluster at home and a managed one in Oracle Cloud, both provisioned with OpenTofu and populated by ArgoCD from a single GitOps repo. Secrets are SOPS and age, images are multi-arch and built on tag, and a self-hosted Forgejo runs its own Actions lanes next to GitHub.
+Two clusters, split on purpose. A bare-metal Talos cluster and a managed one, both provisioned with OpenTofu and populated by ArgoCD from a single GitOps repo. Secrets are SOPS and age, images are multi-arch and built on tag, and a self-hosted Forgejo runs its own Actions lanes next to GitHub.
 
 The exporters below exist because I wanted a metric nobody was publishing yet.
 
-<div align="center">
-
-<a href="https://github.com/mac-lucky/kubernetes-ping-exporter"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=kubernetes-ping-exporter&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="kubernetes-ping-exporter" /></a>
-<a href="https://github.com/mac-lucky/plausible-exporter"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=plausible-exporter&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="plausible-exporter" /></a>
-<a href="https://github.com/mac-lucky/actions-shared-workflows"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=actions-shared-workflows&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="actions-shared-workflows" /></a>
-<a href="https://github.com/mac-lucky/hassio-addons"><img src="https://github-readme-stats.vercel.app/api/pin/?username=mac-lucky&repo=hassio-addons&theme=tokyonight&hide_border=true&cache_seconds=86400" alt="hassio-addons" /></a>
-
-</div>
+| Repo | What it does | |
+|---|---|---|
+| **[kubernetes-ping-exporter](https://github.com/mac-lucky/kubernetes-ping-exporter)** | Pod-to-pod and external ICMP latency, ships its own Helm chart | <img src="https://img.shields.io/github/stars/mac-lucky/kubernetes-ping-exporter?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> |
+| **[plausible-exporter](https://github.com/mac-lucky/plausible-exporter)** | Plausible Analytics into Prometheus | <img src="https://img.shields.io/github/stars/mac-lucky/plausible-exporter?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> |
+| **[hassio-addons](https://github.com/mac-lucky/hassio-addons)** | Home Assistant add-ons: journald shipping and a GitOps agent for /config | <img src="https://img.shields.io/github/stars/mac-lucky/hassio-addons?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" /> |
+| **[actions-shared-workflows](https://github.com/mac-lucky/actions-shared-workflows)** | Reusable CI/CD backbone every repo of mine rides on | <img src="https://img.shields.io/github/stars/mac-lucky/actions-shared-workflows?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" /> |
+| **[nvidia-gpu-exporter-unraid-plugin](https://github.com/mac-lucky/nvidia-gpu-exporter-unraid-plugin)** | Packages a GPU exporter as a one-click Unraid plugin | <img src="https://img.shields.io/github/stars/mac-lucky/nvidia-gpu-exporter-unraid-plugin?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Shell" /> |
 
 ---
 
@@ -86,8 +85,17 @@ The exporters below exist because I wanted a metric nobody was publishing yet.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=mac-lucky&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&cache_seconds=86400" height="180" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mac-lucky&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&hide=dockerfile,hcl,makefile&exclude_repo=Vivado-VHDL-RTC-using-I2C-Master-Slave,Arduino-RTC-with-Temperature,STM32-HC-SR04-USART-timer-pulse-width,DatabaseManager,COVID-19-daily-database-with-SQLite3,weather-station-React&cache_seconds=86400" height="180" alt="Most used languages" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mac-lucky&theme=tokyonight" width="100%" alt="Profile summary" />
+
+<br />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=mac-lucky&theme=tokyonight" height="200" alt="Repos per language" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=mac-lucky&theme=tokyonight" height="200" alt="Most committed language" />
+
+<br />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=mac-lucky&theme=tokyonight" height="200" alt="Stats" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=mac-lucky&theme=tokyonight&utcOffset=2" height="200" alt="Productive time" />
 
 <br />
 
