@@ -91,7 +91,7 @@ The exporters below exist because I wanted a metric nobody was publishing yet.
 
 <br />
 
-<img src="https://streak-stats.demolab.com?user=mac-lucky&theme=tokyonight&hide_border=true&card_width=470" alt="Contribution streak" />
+<img src="https://streak-stats.demolab.com/?user=mac-lucky&theme=tokyonight&hide_border=true&card_width=470" alt="Contribution streak" />
 
 <br /><br />
 
