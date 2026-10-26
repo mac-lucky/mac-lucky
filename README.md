@@ -41,8 +41,6 @@ Two clusters, split on purpose: one bare-metal Talos, one managed, both provisio
 
 | Repo | What it does | |
 |---|---|---|
-| **[kubernetes-ping-exporter](https://github.com/mac-lucky/kubernetes-ping-exporter)** | Pod-to-pod and external ICMP latency, ships its own Helm chart | <img src="https://img.shields.io/github/stars/mac-lucky/kubernetes-ping-exporter?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> |
-| **[plausible-exporter](https://github.com/mac-lucky/plausible-exporter)** | Plausible Analytics into Prometheus | <img src="https://img.shields.io/github/stars/mac-lucky/plausible-exporter?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> |
 | **[hassio-addons](https://github.com/mac-lucky/hassio-addons)** | HA add-ons: journald shipping and a GitOps agent for /config | <img src="https://img.shields.io/github/stars/mac-lucky/hassio-addons?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> |
 | **[actions-shared-workflows](https://github.com/mac-lucky/actions-shared-workflows)** | Reusable CI/CD backbone every repo of mine rides on | <img src="https://img.shields.io/github/stars/mac-lucky/actions-shared-workflows?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> |
 | **[nvidia-gpu-exporter-unraid-plugin](https://github.com/mac-lucky/nvidia-gpu-exporter-unraid-plugin)** | Packages a GPU exporter as a one-click Unraid plugin | <img src="https://img.shields.io/github/stars/mac-lucky/nvidia-gpu-exporter-unraid-plugin?style=flat-square&color=3d59a1&labelColor=1a1b27&logo=github&logoColor=7aa2f7" alt="stars" /> |
